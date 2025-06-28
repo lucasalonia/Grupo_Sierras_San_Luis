@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+section.presentacionHotel {
+  background-image: url("/images/galeria/galeria2.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+section.presentacionHotel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 55, 55, 0.863);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0;
+}
+div.precentacionContenido {
+  margin-top: 0px;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  height: 60vh;
+}
+div.precentacionContenido h2.titulo {
+  text-align: center;
+  font-size: 3rem;
+  color: #e8e7e3;
+  margin: 2rem 0;
+}
+div.precentacionContenido p {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #e8e7e3;
+  font-weight: 350;
+}
+span.bold {
+  font-weight: 500;
+}
+span.suave {
+  color: #3a8061;
+  font-weight: 400;
+  font-style: italic;
+}
+div.precentacionContenido hr {
+  width: 90%;
+  max-width: 600px;
+  background-color: #a5a4a0;
+}
+
+section.habitaciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+div.habitacionesCont hr {
+  width: 90%;
+  max-width: 600px;
+}
+
+a.habitacionesLink {
+  text-decoration: none;
+  color: #e8e7e3;
+  background-color: rgb(46, 94, 64);
+  border-radius: 20px;
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 1rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+a.habitacionesLink:visited {
+  color: #e8e7e3;
+  text-decoration: none;
+}
+a.habitacionesLink:hover {
+  transform: scale(1.05);
+  background-color: rgb(36, 117, 67);
+  text-decoration: none;
+}
+a.habitacionesLink:active {
+  transform: scale(0.95);
+  text-decoration: none;
+}
+a.habitacionesLink span.suave {
+  color: #e8e7e3;
+  font-weight: 700;
+}
+
+section.contingentes {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+  background-color: #2e3b33;
+  margin: 10px 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+}
+section.contingentes.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+section.contingentes > div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+section.contingentes > div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+div.contingentesDescripcion {
+  padding: 20px 20px 0;
+}
+h2.contingentesTitulo {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #e8e7e3;
+  font-weight: 400;
+}
+section.contingentes h3 {
+  font-weight: 400;
+  color: #e8e7e3;
+}
+section.contingentes hr {
+  width: 80%;
+  max-width: 400px;
+}
+div.contingentesDescripcion p {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #e8e7e3;
+  font-weight: 350;
+}
+div.contingentesDescripcion hr {
+  width: 90%;
+  max-width: 700px;
+}
+div.contingentesEjemploUno,
+div.contingentesEjemploDos {
+  padding: 0 20px;
+}
+div.contingentesEjemploUno h3,
+div.contingentesEjemploDos h3 {
+  text-align: center;
+  font-size: 1.7rem;
+}
+div.contingentesEjemploUno img,
+div.contingentesEjemploDos img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
+}
+div.contingentesEjemploUno p,
+div.contingentesEjemploDos p {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #e8e7e3;
+  font-weight: 350;
+}
+
+div.contingentesCierre {
+  padding: 0 20px 30px;
+}
+div.contingentesCierre p {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #e8e7e3;
+  font-weight: 350;
+  height: 100%;
+}
+
+section.mapa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+section.mapa h2 {
+  font-size: 2.2rem;
+  color: #444;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.mapaContenedor {
+  height: 400px;
+  width: 100%;
+  max-width: 900px;
+}
+.mapaContenedor iframe {
+  height: 100%;
+  width: 100%;
+}
+
+section.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #444;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+section.galeria h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+section.galeria p {
+  text-align: justify;
+  font-weight: 400;
+  font-size: 1.2rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+div.galeriaContenedor {
+  display: none;
+}
+div.galeriaContenedorMobile img{
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
+
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out !important;
+}
+
+.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out !important;
+}
+
+.carousel-indicators .active {
+  background-color: #2e3b33;
+}
+.carousel-inner .carousel-item.active img.d-block.w-100 {
+  border-radius: 5px;
+}
+
+
+
+/*Resolucion 1366*/
+@media (min-width: 1366px) {
+  div.galeriaContenedorMobile{
+    display: none;
+  }
+  div.precentacionContenido {
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    margin: 80px auto;
+  }
+  div.precentacionContenido h2.titulo {
+    font-size: 60px;
+    margin: 0px;
+  }
+  div.precentacionContenido p {
+    font-size: 25px;
+    width: 50%;
+  }
+  div.precentacionContenido hr {
+    width: 650px;
+    height: 1px;
+    background-color: #e8e7e3;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  div.habitacionesCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  a.habitacionesLink {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 50px;
+    margin: 10px 0;
+  }
+  div.habitacionesCont hr {
+    width: 350px;
+    height: 1px;
+  }
+
+  section.contingentes {
+    display: grid;
+    grid-template-areas:
+      "uno uno"
+      "espacio1 espacio2"
+      "dos tres"
+      "espacio3 espacio3"
+      "cuatro cuatro";
+
+    margin: 0 auto;
+    border-radius: 30px;
+    font-weight: 400;
+    width: 70%;
+    background-color: #e8e7e3;
+  }
+
+  section.contingentes p {
+    margin-bottom: 20px;
+  }
+  div.contingentesDescripcion {
+    grid-area: uno;
+    padding: 0px;
+    padding: 25px 50px 0px;
+  }
+  h2.contingentesTitulo {
+    font-size: 35px;
+    margin: 10px 0 20px;
+    color: #444;
+  }
+  section.contingentes h3 {
+    margin: 20px 0 20px;
+    font-size: 30px;
+    color: #444;
+  }
+  div.contingentesDescripcion p {
+    font-size: 20px;
+    text-align: justify;
+    color: #444;
+  }
+
+  section.contingentes div.contingentesDescripcion hr {
+    width: 700px;
+  }
+  section.contingentes hr {
+    width: 479px;
+    height: 2px;
+  }
+  section.contingentes img {
+    width: 100%;
+  }
+  div.contingentesEjemploUno {
+    grid-area: dos;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-left: 50px;
+  }
+  div.contingentesEjemploUno h3 {
+    align-self: center;
+    text-align: center;
+  }
+  div.contingentesEjemploUno p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 20px;
+    padding-left: 0px;
+    color: #444;
+  }
+
+  div.contingentesEjemploDos {
+    grid-area: tres;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    padding-right: 20px;
+  }
+  div.contingentesEjemploDos h3 {
+    align-self: center;
+    text-align: center;
+  }
+
+  div.contingentesEjemploDos img {
+    width: 85%;
+  }
+  div.contingentesEjemploDos p {
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 35px;
+    padding-right: 50px;
+    color: #444;
+  }
+
+  div.contingentesCierre {
+    padding: 0px 100px 50px;
+    grid-area: cuatro;
+  }
+  div.contingentesCierre p {
+    font-size: 25px;
+    margin: 0px;
+    margin-top: 5px;
+    text-align: center;
+    color: #444;
+  }
+  hr.uno {
+    grid-area: espacio1;
+  }
+  hr.dos {
+    grid-area: espacio2;
+  }
+  section.contingentes hr.tres {
+    grid-area: espacio3;
+    width: 700px;
+  }
+
+  div.galeriaContenedor {
+    display: flex;
+    width: 100%;
+    
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  div.galeriaContenedor img {
+    width: 95%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 5px 8px 5px rgba(0, 0, 0, 0.301);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    display: block;
+
+    object-fit: cover;
+  }
+  div.galeriaContenedor img.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  section.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
+    margin-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  section.galeria h2 {
+    text-align: center;
+    font-weight: 450;
+    font-size: 2.4rem;
+    margin-bottom: 5px;
+  }
+  section.galeria p {
+    text-align: justify;
+    font-size: 1.4rem;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  section.galeria hr {
+    height: 1px;
+    width: 10%;
+    margin-bottom: 20px;
+  }
+  div.galeriaContenedor {
+    width: 100%;
+
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+  }
+
+  div.galeriaContenedor img {
+    width: 100%;
+    box-shadow: none;
+  }
+}
+
+/*Resolucion 1920*/
+@media (min-width: 1920px) {
+  div.precentacionContenido {
+    padding-left: 80px;
+  }
+  div.precentacionContenido h2.titulo {
+    font-size: 70px;
+    margin: 0px;
+  }
+  div.precentacionContenido p {
+    font-size: 30px;
+    width: 50%;
+  }
+
+  section.contingentes {
+    width: 50%;
+  }
+  section.contingentes hr.tres {
+    margin-top: 30px;
+  }
+
+  h2.contingentesTitulo {
+    font-size: 35px;
+    margin: 10px 0 20px;
+  }
+
+  section.contingentes h3 {
+    font-size: 25px;
+  }
+  section.contingentes h3 {
+    margin: 20px 0 20px;
+  }
+
+  div.contingentesDescripcion p {
+    font-size: 25px;
+    text-align: justify;
+  }
+
+  div.contingentesEjemploUno p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  div.contingentesEjemploDos p {
+    font-size: 20px;
+    text-align: justify;
+  }
+  div.contingentesCierre p {
+    font-size: 25px;
+    text-align: center;
+  }
+  div.contingentesEjemploDos img {
+    margin: 0;
+    align-self: center;
+  }
+  div.contingentesEjemploUno img {
+    margin: 0;
+    align-self: center;
+  }
+
+  section.galeria h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+  }
+  section.galeria p {
+    font-size: 1.5rem;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  div.galeriaContenedor {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, auto);
+  }
+
+  div.galeriaContenedor img {
+    width: 100%;  
+    box-shadow: none;
+  }
+}

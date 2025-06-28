@@ -1,0 +1,72 @@
+doctype html
+html
+  head
+    title Sierras Club
+    link(rel="stylesheet", href="/css/clubStyle.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    include ../includes/meta.pug
+  body
+    include ../includes/navbar.pug
+    main
+      section.presentacionClub
+        div.presentacionContenido
+          h2.titulo
+            span.bold Sierras 
+            span.suave Club 
+          hr
+          p 
+            span.suave Sierras Club 
+            | cuenta con una pileta semiolímpica climatizada, cubierta con techo corredizo de policarbonato, para que puedas disfrutarla en cualquier condición climática.  
+          p Ofrecemos natación para todas las edades y niveles, aquagym, pileta libre y un gimnasio con entrenamiento funcional personalizado, siempre con profesionales dedicados a tu salud y bienestar. 
+          p
+            span.bold Animate y vivi la experiencia de esta gran 
+              span.suave familia 
+              | del sierras club y sierras hotel.
+      section.galeria
+        div.galeriaDescripcion
+          h2.titulo 
+            span.suave Descubrí Sierras Club  
+          hr
+          p Desde la pileta climatizada hasta los entrenamientos en el gimnasio, compartimos algunos momentos que hacen especial cada día en Sierras Club.
+
+      div.galeriaContenedorMobile
+          div#carouselSuit.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+                ol.carousel-indicators
+                  li.active(data-target="#carouselSuit" data-slide-to="0")
+                  li(data-target="#carouselSuit" data-slide-to="1")
+                  li(data-target="#carouselSuit" data-slide-to="2")
+                  li(data-target="#carouselSuit" data-slide-to="3")
+                  li(data-target="#carouselSuit" data-slide-to="4")
+                  li(data-target="#carouselSuit" data-slide-to="5")
+                  
+                .carousel-inner
+                  .carousel-item.active
+                    img.d-block.w-100(src="/images/club/club1.jpg" alt="Cama Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club2.jpg" alt="Baño standar")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club3.jpg" alt="Sala Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club4.jpg" alt="Sala Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club5.jpg" alt="Sala Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club6.jpg" alt="Sala Doble")             
+                a.carousel-control-prev(href="#carouselSuit" role="button" data-slide="prev")
+                  span.carousel-control-prev-icon(aria-hidden="false")
+                  span.sr-only Previous
+                a.carousel-control-next(href="#carouselSuit" role="button" data-slide="next")
+                  span.carousel-control-next-icon(aria-hidden="false")
+                  span.sr-only Next   
+      section.contacto
+        div.contactoCont
+          hr
+          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
+          hr
+      include ../includes/iframe.pug
+      script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+      script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
+      
+  include ../includes/footer.pug
+  
+  +footer( "el Club Sierras" )

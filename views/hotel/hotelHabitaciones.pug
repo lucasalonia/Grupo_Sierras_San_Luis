@@ -1,0 +1,179 @@
+doctype html
+html
+  head
+    title Habitaciones
+    link(rel="stylesheet", href="/css/habitacionesStyle.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    include ../includes/meta.pug
+
+  body
+    include ../includes/navbar.pug
+    main
+      section.presentacionHotel 
+        div.precentacionContenido
+          h2.titulo
+            span.bold Sierras 
+            span.suave Habitaciones 
+            
+          hr
+          p Con una infraestructura pensada para brindar confort y funcionalidad, 
+            span.suave SIERRAS HOTEL 
+            | ofrece 
+            strong 55 habitaciones, salones para reuniones y eventos, y un amplio lobby que da la bienvenida con calidez.
+          p El hotel dispone de 
+            strong recepción las 24 horas, conexión Wi-Fi, cámaras de seguridad, mensajería, un moderno Business Center y servicio de emergencias, 
+            | garantizando así una estadía segura, conectada y placentera para cada huésped.
+
+
+      section.habitaciones
+
+        h2.habitacionesTitulo 
+          span.suave Nuestras habitaciones
+        hr
+        div.habitacionesTipos
+          div.habitacionEstandarDescripcion
+            h3 Habitaciones Estandar
+            p 
+              strong Servicios: 
+              | Smart TV por cable. Split frío/calor. Baño privado. Caja fuerte.  Calidad superior en ropa blanca.  Pava Eléctrica. Secador de Pelo. Frigobar, cochera cubierta. Pileta Climatizada y cubierta o descubierta.
+            p 
+              strong - Habitación single (una persona) $61.300 Tarifa por noche. 
+            p 
+              strong - Habitación doble $76.000 Tarifa por Noche.
+            p 
+              strong - Habitación triple $90.300 Tarifa por Noche.
+            p 
+              strong - Habitación cuádruple $105.000 Tarifa por Noche
+            p 
+              strong - Habitación quíntuple $115.000 Tarifa por Noche.
+
+              
+          div.habitacionDoble
+            h4 Doble
+            div#carouselDoble.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#carouselDoble" data-slide-to="0")
+                li(data-target="#carouselDoble" data-slide-to="1")
+                li(data-target="#carouselDoble" data-slide-to="2")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src="/images/habitaciones/dobles/habDobleCamas.jpg" alt="Cama Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/dobles/habDobleBaño.jpg" alt="Baño standar")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/dobles/habDoblePlus.jpg" alt="Sala Doble")
+              a.carousel-control-prev(href="#carouselDoble" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselDoble" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+
+
+          div.habitacionTriple
+            h4 Triple
+            div#carouselTriple.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#carouselTriple" data-slide-to="0")
+                li(data-target="#carouselTriple" data-slide-to="1")
+                li(data-target="#carouselTriple" data-slide-to="2")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src="/images/habitaciones/triples/habTripleCamas.jpg" alt="Cama Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/triples/habTripleMueble.jpg" alt="Baño standar")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/estandar.jpg " alt="Sala Doble")
+              a.carousel-control-prev(href="#carouselTriple" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselTriple" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+
+          div.habitacionCuadruple 
+            h4 Cuadruple
+            div#carouselCuadruple.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#carouselCuadruple" data-slide-to="0")
+                li(data-target="#carouselCuadruple" data-slide-to="1")
+                li(data-target="#carouselCuadruple" data-slide-to="2")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src="/images/habitaciones/cuadruples/habCuadruple.jpg" alt="Cama Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/triples/estandarTiple.jpg" alt="Baño standar")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/dobles/habDoblePlus.jpg" alt="Sala Doble")
+              a.carousel-control-prev(href="#carouselCuadruple" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselCuadruple" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+
+          div.habitacionQuintuple
+            h4 Quíntuple  
+            div#carouselQuintuple.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#carouselQuintuple" data-slide-to="0")
+                li(data-target="#carouselQuintuple" data-slide-to="1")
+                li(data-target="#carouselQuintuple" data-slide-to="2")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src="/images/habitaciones/quintuples/habitacionQuintuple.webp" alt="Cama Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/quintuples/habQuintBaño.jpg" alt="Baño standar")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/dobles/habDoblePlus.jpg" alt="Sala Doble")
+              a.carousel-control-prev(href="#carouselQuintuple" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselQuintuple" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+
+          
+          div.habitacionSuit 
+            hr.suit
+            h3 Suite
+            p 
+              strong Servicios:  
+              | Smart TV por cable. Jacuzzi, Split frío/calor. Baño privado. Caja fuerte.  Calidad superior en ropa blanca. Pava Eléctrica. Secador de Pelo. Frigobar, cochera cubierta. Pileta Climatizada cubierta o descubierta.
+            p
+              strong - Habitación SUITE con hidromasaje $140.000 Tarifa por Noche.
+            div#carouselSuit.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#carouselSuit" data-slide-to="0")
+                li(data-target="#carouselSuit" data-slide-to="1")
+                li(data-target="#carouselSuit" data-slide-to="2")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src="/images/habitaciones/suit/habSuitCama.jpg" alt="Cama Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/suit/habSuitBaño.jpg" alt="Baño standar")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/suit/habSuitEspacio.jpg" alt="Sala Doble")
+                  
+              a.carousel-control-prev(href="#carouselSuit" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselSuit" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+      section.contacto
+        div.contactoCont
+          hr
+          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
+          hr
+          
+      include ../includes/iframe.pug
+
+  script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+  script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
+
+
+    
+  include ../includes/footer.pug
+  
+  +footer( "las Habitaciones del Hotel Sierras" )

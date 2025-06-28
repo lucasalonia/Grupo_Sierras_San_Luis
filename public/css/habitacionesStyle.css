@@ -1,0 +1,393 @@
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+section.presentacionHotel {
+  background-image: url("/images/habitaciones/cuadruples/habCuadruple.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+}
+section.presentacionHotel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 55, 55, 0.863);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0;
+}
+div.precentacionContenido {
+  margin-top: 0px;
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  height: 60vh;
+}
+div.precentacionContenido h2.titulo {
+  text-align: center;
+  font-size: 2.8rem;
+  color: #e8e7e3;
+  margin: 2rem 0;
+}
+div.precentacionContenido p {
+  text-align: justify;
+  font-size: 1.2rem;
+  color: #e8e7e3;
+  font-weight: 350;
+}
+span.bold {
+  font-weight: 500;
+}
+span.suave {
+  color: #3a8061;
+  font-weight: 400;
+  font-style: italic;
+}
+div.precentacionContenido hr {
+  width: 90%;
+  max-width: 600px;
+  background-color: #a5a4a0;
+}
+
+
+
+
+.carousel-item {
+  transition: transform 1s ease-in-out !important;
+}
+
+.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.carousel-indicators li {
+  width: 40px !important;
+  height: 8px !important;
+  margin: 0 2px;
+}
+.carousel-indicators .active {
+  background-color: #2e3b33;
+}
+.carousel-inner .carousel-item.active img.d-block.w-100 {
+  border-radius: 5px;
+}
+
+section.habitaciones {
+  border-radius: 15px;
+  margin: 20px 10px 40px;
+  margin-top: 60px;
+  padding: 15px 10px;
+  color: #444;
+}
+section.habitaciones hr {
+  width: 90%;
+  max-width: 600px;
+}
+section.habitaciones h2 {
+  font-size: 2.3rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-weight: 500;
+}
+section.habitaciones h3 {
+  font-size: 2rem;
+  text-align: center;
+
+  font-weight: 450;
+}
+section.habitaciones h4 {
+  font-size: 2rem;
+  margin: 2rem 0 1rem;
+  font-weight: 400;
+}
+section.habitaciones p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+section.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+}
+div.contactoCont hr {
+  width: 90%;
+  max-width: 600px;
+}
+
+a.contactoLink {
+  text-decoration: none;
+  color: #e8e7e3;
+  background-color: rgb(46, 94, 64);
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 100%;
+  text-align: center;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  transition: transform 0.3s ease;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.7);
+}
+a.contactoLink:visited {
+  color: #e8e7e3;
+}
+a.contactoLink:hover {
+  transform: scale(1.05);
+  background-color: rgb(36, 117, 67);
+  text-decoration: none;
+}
+a.contactoLink:active {
+  transform: scale(0.95);
+  text-decoration: none;
+}
+
+hr.suit {
+  margin-top: 60px;
+}
+
+
+/*Resolucion 1366*/
+@media (min-width: 1366px) {
+  div.precentacionContenido {
+    margin: 0px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: baseline;
+    padding-top: 0px;
+    margin: 100px auto;
+  }
+  div.precentacionContenido h2.titulo {
+    font-size: 60px;
+    margin: 0px;
+  }
+  div.precentacionContenido p {
+    font-size: 25px;
+    width: 50%;
+  }
+  div.precentacionContenido hr {
+    width: 650px;
+    height: 1px;
+    background-color: #e8e7e3;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .carousel-item {
+    transition: transform 1s ease-in-out !important;
+  }
+
+  .carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    border-radius: 50%;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+  .carousel-indicators li {
+    background-color: #ff0000;
+    width: 70px !important;
+    height: 5px !important;
+    margin: 0 4px;
+  }
+  .carousel-indicators .active {
+    background-color: #2e3b33;
+  }
+  .carousel-inner .carousel-item.active img.d-block.w-100 {
+    border-radius: 5px;
+    
+  }
+ 
+
+   section.habitaciones{
+      width: 60%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      padding-bottom: 50px;
+    }
+
+  div.habitacionesTipos{
+     display: grid;
+      grid-template-columns: 1fr 1fr; 
+        grid-template-areas: 
+        "des des"
+        "doble triple"
+        "cuadruple quintuple"
+        "suit suit"
+        ;
+        width: 80%;
+        margin: 0 auto;
+
+        
+  }
+   div.habitacionTriple, div.habitacionCuadruple,div.habitacionDoble{
+    width: 99%;
+    align-self: center;
+    justify-self: center;
+    
+  }
+  div.habitacionEstandarDescripcion{
+    grid-area: des;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  div.habitacionDoble{
+    grid-area: doble;
+  }
+  div.habitacionTriple{
+    grid-area: triple;
+  }
+  div.habitacionCuadruple{
+    grid-area: cuadruple;
+  }
+  div.habitacionQuintuple{
+    margin-left: 2px;
+    grid-area: quintuple;
+  }
+  div.habitacionSuit{
+    grid-area: suit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     padding-left: 50px;
+    padding-right: 50px;
+  }
+  section.habitaciones hr {
+    width: 700px;
+    height: 1px;
+  }
+  div#carouselSuit{
+    width: 70%;
+  }
+  section.habitaciones h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 0px;
+    font-weight: 500;
+  }
+  section.habitaciones h3 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 450;
+  }
+  section.habitaciones h4 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  section.habitaciones p {
+    font-size: 20px;
+    font-weight: 350;
+     text-align: center;
+     margin-bottom: 10px;
+  }
+
+  hr.suit{
+    margin-top: 50px;
+}
+
+div.contactoCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  a.contactoLink {
+    text-align: center;
+    font-size: 25px;
+    padding: 20px 40px;
+    margin: 10px 0;
+  }
+  div.contactoCont hr {
+    width: 350px;
+    height: 1px;
+  }
+}
+
+
+
+
+
+
+
+@media (min-width: 1920px) {
+  div.precentacionContenido {
+    padding-left: 80px;
+  }
+  div.precentacionContenido h2.titulo {
+    font-size: 70px;
+    margin: 0px;
+  }
+  div.precentacionContenido p {
+    font-size: 30px;
+    width: 50%;
+  }
+
+    div.contactoCont hr {
+    width: 400px;
+    height: 1px;
+  }
+    section.habitaciones{
+      width: 50%;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-right: 0;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 50px;
+      
+    }
+  div.habitacionesTipos{
+    margin: 0;
+    width: 90%;
+
+  }
+    div.habitacionTriple, div.habitacionCuadruple,div.habitacionDoble{
+    width: 99%;
+
+    
+  } 
+  div.habitacionEstandarDescripcion{
+    grid-area: des;
+    padding-left: 90px;
+    padding-right: 90px;
+  } 
+  div.habitacionSuit{
+     padding-left: 90px;
+    padding-right: 90px;
+  }
+
+}

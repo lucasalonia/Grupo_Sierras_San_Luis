@@ -1,0 +1,93 @@
+doctype html
+html
+  head
+    title Sierras Restaurante
+    link(rel="stylesheet", href="/css/restauranteStyle.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    include ../includes/meta.pug
+  body
+    include ../includes/navbar.pug
+    main
+      section.presentacionRestaurante 
+        div.presentacionContenido
+          h2.titulo
+            span.bold Sierras 
+            span.suave Restaurante 
+          
+          hr
+          p Ubicado dentro del Hotel, en  
+            span.suave SIERRAS RESTAURANTE 
+            | podes disfrutar de la mejor cocina casera con un trato familiar. Porque en Sierras Restaurant, no tenemos clientes... tenemos amigos.
+          p Las pastas, las carnes, los pescados y mariscos, bases de la cocina de nuestras abuelas y la simplicidad que expresa lo exquisito de la escencia de la materia prima que proviene de distintos productores, que seleccionamos entre 
+            strong lo mejor de San Luis.
+
+      section.especialidades 
+        div.especialidadesContenido
+          h2.titulo 
+            span.suave Especialidades
+          hr
+          p Nos caracterizamos por nuestros 
+            span.bold pescados de río y de mar
+            |, ya sean, anchoas, anchoitas, calamarettis, y las imperdibles truchas y pejerrey con distintas salsas. 
+          p Tambien puede disfrutar de 
+            strong carnes asadas y pollo a la canasta. 
+            |Cada plato es preparado con ingredientes frescos y de alta calidad, garantizando una 
+            em experiencia culinaria única.
+          
+
+      section.menuGenerico
+        div.menuContenido
+          div.menuContenidoPresentacion
+            hr
+            h2 
+              em No pueden faltar los clásicos...
+            hr
+          div.menuContenedor  
+            div.menuGenericoOpcionUno.opcion
+              h3 Pastas caseras 
+              img(src="/images/restaurante/restaurante5.png", alt="")
+
+            div.menuGenericoOpcionDos.opcion
+              h3 Minutas 
+              img(src="/images/restaurante/restaurante6.png", alt="")
+
+            div.menuGenericoOpcionTres.opcion
+              h3 Frituras 
+              img(src="/images/restaurante/restaurante1.png", alt="")
+
+            div.menuGenericoOpcionCuatro.opcion
+              h3 Pizzas y Empanadas 
+              img(src="/images/restaurante/restaurante3.png", alt="")
+            
+            div.menuGenericoOpcionCinco.opcion
+              h3 Mariscos
+              img(src="/images/restaurante/restaurante4.png", alt="")
+            
+            div.menuGenericoOpcionSeis.opcion
+              h3 Sandwichs
+              img(src="/images/restaurante/restaurante2.png", alt="")
+
+        div.menuGenericoLink
+          h2 Para ver el menú completo, 
+            |  hacé click    
+            a(href="#") 
+              em aquí
+
+    section.contacto
+      div.contactoCont
+        hr
+        a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
+        hr
+    
+    
+    include ../includes/iframe.pug    
+
+  script(src="/scripts/animacionRestaurante.js")
+
+
+
+      
+    
+  include ../includes/footer.pug
+  
+  +footer( "Sierras Restaurante" )

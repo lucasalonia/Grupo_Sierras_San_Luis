@@ -1,0 +1,83 @@
+doctype html
+html
+  head
+    title Sierras Eventos
+    link(rel="stylesheet", href="/css/eventosStyle.css")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css")
+    include ../includes/meta.pug
+  body
+    include ../includes/navbar.pug
+    main
+      section.presentacionEventos
+        div.presentacionContenido
+          h2.titulo
+            span.bold Sierras 
+            span.suave Eventos 
+          hr
+          p 
+            span.suave SIERRAS EVENTOS 
+            | está dedicado a la organización integral de eventos, nos encontramos en una zona privilegiada en Las Chacras, Juana Koslay, lejos del centro de la ciudad y rodeados de un entorno natural
+          p Nos dedicamos a hacer de su idea o proyecto una realidad, dándole importancia a cada detalle. Somos conscientes de que cada evento es único e irrepetible y nos caracterizamos por un trato personalizado con cada cliente, asesorándole en todo aquello que sea necesario.
+      section.eventosServicios
+        div.eventosServiciosContenido
+          h2.titulo 
+            span.suave Tu evento ideal
+          hr
+          p
+            | Salón de 800 m² con 
+            span.bold capacidad para 500 personas 
+            | sentadas, 
+            span.bold pista de baile 
+            | y 
+            span.bold recepción de 144 m². 
+            | Amplios ventanales con vista al 
+            span.bold parque
+            |, 
+            span.bold escenario
+            |, mesas redondas y rectangulares.
+
+          p
+            | Equipado con 
+            span.bold DJ, sonido, iluminación, pantalla gigante, barra de tragos y 9 aires BGH de 15.000 frigorías para climatización. Sanitarios modernos aptos para personas con movilidad reducida.
+
+          p
+            | Parque y patio para ceremonias o 
+            span.bold recepciones al aire libre, más de 1000 sillas (500 Hilton), 
+            | mantelería exclusiva, cristalería fina, habitación de cortesía, personal especializado, seguridad y 
+            span.bold estacionamiento vigilado.
+
+      section.eventosVideo 
+        div.eventosVideoContenido
+          h2.titulo 
+            span.suave Viví la experiencia
+          hr
+          p 
+            span.bold Descubrí 
+            | en este video todo lo que nuestro salón tiene para ofrecer: elegancia, comodidad y un entorno único para tus eventos.
+        div.eventosVideoIframe
+          iframe( src="https://www.youtube.com/embed/NoJ9qAYydNg?si=5_xdX11k-ukAiKJ0" title="YouTube video player"  allowfullscreen)
+
+      section.contacto
+        div.contactoCont
+          hr
+          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
+          hr
+
+      section.eventosGaleria
+        div.eventosGaleriaContenido
+          h2.titulo 
+            span.suave Galería
+          hr
+        div.eventosGaleriaImg
+          img(src="/images/eventos/eventos1.jpeg", alt="Evento 1")
+          img(src="/images/eventos/eventos4.jpeg", alt="Evento 2")
+          img(src="/images/eventos/eventos3.jpeg", alt="Evento 3")  
+          img(src="/images/eventos/eventos5.jpeg", alt="Evento 3")  
+
+      
+      include ../includes/iframe.pug
+      
+      
+  include ../includes/footer.pug
+  
+  +footer( "Sierras Eventos." )

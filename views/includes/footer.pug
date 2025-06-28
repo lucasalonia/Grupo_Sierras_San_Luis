@@ -1,0 +1,25 @@
+link(rel="stylesheet", href="/css/footerStyle.css")
+
+mixin footer(servicio)
+    - var servicio = servicio || "Sierras Hotel"
+    a(href=`https://wa.me/5492664955656?text=Hola!%20Estuve%20viendo%20el%20sitio%20web.%20Me%20gustara%20obtener%20mas%20infromación%20sobre%20*${encodeURIComponent(servicio)}*.` target="_blank") 
+        div.whatsapp-wrapper
+            img.whatsapp(src="/images/whatsappButton.png", alt="")
+    footer.footer
+        div.footer-contenido
+            a.subir(href="#") Subir
+            ul.redes
+                li
+                    a(href="https://www.facebook.com/SierrasHotelLasChacras/?locale=es_LA" target="_blank") 
+
+                        img.redes(src="/images/facebook.png", alt="")
+                li
+                    a(href="https://www.instagram.com/sierrashotel/?hl=es" target="_blank") 
+
+                        img.redes(src="/images/instagram.png", alt="")
+                li
+                    a(href="/contacto/contactoPrincipal" target="_blank") Contacto
+                        
+            p COPYRIGHT © 2025 Sierras Hotel - Diseñado y Programado por 
+                a(href="#") Salonia Luca 
+        
