@@ -7,6 +7,7 @@ html
     include ../includes/meta.pug
   body
     include ../includes/navbar.pug
+    +navbar()
     main
       section.presentacionHotel 
         div.precentacionContenido
@@ -15,8 +16,19 @@ html
             span.suave Hotel 
             
           hr
-          p Ubicado en Las Chacras, una de las zonas más tradicionales de la joven ciudad de Juana Koslay. A solo 14 km del microcentro de la ciudad de San Luis y a 6.5 km del centro de Potrero de Los Funes.
-          p Rodeado de los atractivos turísticos más importantes de la región se encuentra SIERRAS HOTEL , un emprendimiento turístico que busca satisfacer todas las expectativas de quienes lo visitan sin perder los valores tradicionales de familia y amistad que caracterizan a estos pagos puntanos.
+          p Ubicado en 
+            span.bold Las Chacras
+            | , una de las zonas más tradicionales de la joven ciudad de 
+            span.bold Juana Koslay
+            | , a solo 14 km del 
+            span.bold microcentro de la ciudad de San Luis 
+            | y a 6,5 km del centro de 
+            span.bold Potrero de los Funes.
+
+          p Rodeado de los atractivos turísticos más importantes de la región, se encuentra 
+            span.suave Sierras Hotel
+            | , un emprendimiento turístico que busca satisfacer todas las expectativas de quienes lo visitan, sin perder los valores tradicionales de 
+            em familia y amistad que caracterizan a estos pagos puntanos.
 
 
 
@@ -38,34 +50,74 @@ html
           p 
             | Recibimos contingentes durante todo el año, ofreciendo un servicio especializado para grupos que 
             strong buscan comodidad, seguridad y organización. 
-            |Nuestro hotel cuenta con la infraestructura y el equipo humano necesario para alojar desde escuelas hasta clubes, delegaciones o asociaciones, garantizando una estadía ordenada y 
-            em placentera. 
-        hr.uno
-        div.contingentesEjemploUno
-          h3 
-            em Contingentes escolares
-          img(src="/images/contingentes/educativo.jpg", alt="")
-          p Entorno seguro y cómodo para escuelas. Habitaciones espaciosas, menús adaptados y áreas comunes para compartir. 
-            strong Ideal para docentes y estudiantes.
-        hr.dos
-        div.contingentesEjemploDos
-          h3 
-            em Agrupaciones de todo tipo
-          img(src="/images/contingentes/exmilitares.png", alt="")
-          p Recibimos clubes deportivos, delegaciones y asociaciones. Coordinamos cada detalle para brindar una estadía 
+            | Nuestro hotel cuenta con la infraestructura y el equipo humano necesarios para alojar desde escuelas hasta clubes, delegaciones o asociaciones, garantizando una estadía ordenada y 
+            em placentera.
+                    hr.uno
+        div.contingentesEjemplo
+          div#agrupacionesCarousel.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
+              ol.carousel-indicators
+                li.active(data-target="#agrupacionesCarousel" data-slide-to="0")
+                li(data-target="#agrupacionesCarousel" data-slide-to="1")
+                li(data-target="#agrupacionesCarousel" data-slide-to="2")
+                li(data-target="#agrupacionesCarousel" data-slide-to="3")
+                li(data-target="#agrupacionesCarousel" data-slide-to="4")
+                li(data-target="#agrupacionesCarousel" data-slide-to="5")
+                li(data-target="#agrupacionesCarousel" data-slide-to="6")
+                li(data-target="#agrupacionesCarousel" data-slide-to="7")
+                li(data-target="#agrupacionesCarousel" data-slide-to="8")
+                li(data-target="#agrupacionesCarousel" data-slide-to="9")
+              .carousel-inner
+                .carousel-item.active
+                  img.d-block.w-100(src=" /images/contingentes/educativo.jpg" alt="Contingente 1")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/deportivo.png" alt="Contingente 2")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/cont.png" alt="Contingente 3")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/exmilitares.png" alt="Contingente 4")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente1.png" alt="Contingente 5")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente3.png" alt="Contingente 6")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente4.jpg" alt="Contingente 7")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente5.png" alt="Contingente 8")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente7.jpeg" alt="Contingente 9")
+                .carousel-item
+                  img.d-block.w-100(src="/images/contingentes/contingente8.JPG" alt="Contingente 10")
+
+              a.carousel-control-prev(href="#agrupacionesCarousel" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#agrupacionesCarousel" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+          hr
+          p Clubes, delegaciones y asociaciones con propuestas pensadas para cada grupo. Coordinamos cada aspecto para asegurar una estadía 
             strong cómoda 
             | y 
-            strong sin preocupaciones.
+            strong organizada.
+            |  Nuestro entorno es ideal para escuelas: espacios amplios, menús adaptados y zonas comunes que favorecen la convivencia. 
+            strong Una opción confiable para docentes y estudiantes.
         hr.tres
         div.contingentesCierre
           p 
             em Cada grupo es 
             strong  único. 
-            em  Nuestro equipo y espacios están listos para ofrecer una experiencia organizada, cálida y personalizada.
+            em  Nuestro equipo y espacios están listos para ofrecer una experiencia cálida y personalizada.
 
 
      
-
+      section.caracteristicas 
+        div.caracteristicasCont
+        
+          p
+            span.suave Hotel Sierras 
+            | cuenta con 
+            span.bold 55 habitaciones, pileta climatizada, estacionamiento cubierto, salones para eventos, recepción 24 hs, Wi-Fi, seguridad, lobby bar 
+            em y más servicios pensados para tu comodidad.
 
       section.galeria
         div.galeriaPresentacion
@@ -126,13 +178,9 @@ html
           img(src="/images/galeria/galeria12.jpg", alt="Imagen 6")
           img(src="/images/galeria/galeria11.jpg", alt="Imagen 7")
           img(src="/images/galeria/galeria8.jpg", alt="Imagen 8") 
-      section.habitaciones
-        div.habitacionesCont
-          hr
-          a.habitacionesLink(href="/contacto/contactoPrincipal") Ir a Contacto
-          hr
-
-        include ../includes/iframe.pug
+      
+      include ../includes/botonContacto.pug
+      include ../includes/iframe.pug
                       
         
     script(src="/scripts/animacionHome.js")

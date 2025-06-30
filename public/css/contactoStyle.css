@@ -16,7 +16,7 @@ section.infoContacto {
 
 div.contactoInfoCont {
   background-color: #d0d4d1;
-  padding: 25px 50px;
+  padding: 25px 10px;
   border-radius: 5px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.527);
 }
@@ -27,12 +27,15 @@ section.infoContacto h2 {
   font-size: 1.6rem;
   text-align: start;
 }
+ div.infoContactoDireccion.contInfo{
+  padding: 0 20px;
 
+ }
 .contInfo {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 1rem;
+  font-size: 0.9rem;
   flex-wrap: wrap;
   margin-bottom: 20px;
   margin-left: 20px;
@@ -231,6 +234,9 @@ section.formulario button.botonEnviar:hover {
   section.formulario textarea {
     height: 150px;
   }
+  div.infoContactoDireccion.contInfo{
+  margin-left: 20px;
+ }
 }
 
 @media (min-width: 1920px) {

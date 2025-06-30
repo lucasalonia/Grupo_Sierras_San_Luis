@@ -5,7 +5,7 @@ body {
 }
 
 section.presentacionRestaurante {
-  background-image: url("/images/fondoIndex.jpg");
+  background-image: url("/images/frenteRes2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -218,7 +218,7 @@ a.contactoLink:active {
     margin: 0px;
   }
   div.presentacionContenido p {
-    font-size: 1.5rem;
+    font-size: 25px;
     width: 50%;
   }
   div.presentacionContenido hr {

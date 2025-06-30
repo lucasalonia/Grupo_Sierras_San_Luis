@@ -7,6 +7,7 @@ html
     include ../includes/meta.pug
   body
     include ../includes/navbar.pug
+    +navbar()
     main
       section.presentacionRestaurante 
         div.presentacionContenido
@@ -16,10 +17,10 @@ html
           
           hr
           p Ubicado dentro del Hotel, en  
-            span.suave SIERRAS RESTAURANTE 
+            span.suave Sierras Restaurante 
             | podes disfrutar de la mejor cocina casera con un trato familiar. Porque en Sierras Restaurant, no tenemos clientes... tenemos amigos.
           p Las pastas, las carnes, los pescados y mariscos, bases de la cocina de nuestras abuelas y la simplicidad que expresa lo exquisito de la escencia de la materia prima que proviene de distintos productores, que seleccionamos entre 
-            strong lo mejor de San Luis.
+            span.bold  lo mejor de San Luis.
 
       section.especialidades 
         div.especialidadesContenido
@@ -30,7 +31,7 @@ html
             span.bold pescados de río y de mar
             |, ya sean, anchoas, anchoitas, calamarettis, y las imperdibles truchas y pejerrey con distintas salsas. 
           p Tambien puede disfrutar de 
-            strong carnes asadas y pollo a la canasta. 
+            span.bold  carnes asadas y pollo a la canasta. 
             |Cada plato es preparado con ingredientes frescos y de alta calidad, garantizando una 
             em experiencia culinaria única.
           
@@ -70,14 +71,10 @@ html
         div.menuGenericoLink
           h2 Para ver el menú completo, 
             |  hacé click    
-            a(href="#") 
+            a(href="https://drive.google.com/file/d/1WiRAxZPzRG9z-IxTbT1WzbCxJmj2mV6n/view?usp=sharing" target="_blank") 
               em aquí
 
-    section.contacto
-      div.contactoCont
-        hr
-        a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
-        hr
+    include ../includes/botonContacto.pug
     
     
     include ../includes/iframe.pug    

@@ -76,9 +76,7 @@ div.presentacionContenido hr {
 .carousel-indicators .active {
   background-color: #2e3b33;
 }
-.carousel-inner .carousel-item.active img.d-block.w-100 {
-  border-radius: 5px;
-}
+
 div.galeriaContenedorMobile img {
   width: 100%;
   height: 250px;
@@ -237,4 +235,10 @@ div.galeriaDescripcion hr {
     width: 400px;
     height: 1px;
   }
+   div.galeriaContenedorMobile img {
+    width: auto;
+    height: 550px;
+
+  }
+
 }

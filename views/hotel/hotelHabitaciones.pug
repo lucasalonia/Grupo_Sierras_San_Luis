@@ -8,6 +8,7 @@ html
 
   body
     include ../includes/navbar.pug
+    +navbar()
     main
       section.presentacionHotel 
         div.precentacionContenido
@@ -17,11 +18,11 @@ html
             
           hr
           p Con una infraestructura pensada para brindar confort y funcionalidad, 
-            span.suave SIERRAS HOTEL 
+            span.suave Sierras Hotel 
             | ofrece 
-            strong 55 habitaciones, salones para reuniones y eventos, y un amplio lobby que da la bienvenida con calidez.
+            span.bold 55 habitaciones, salones para reuniones y eventos, y un amplio lobby que da la bienvenida con calidez.
           p El hotel dispone de 
-            strong recepción las 24 horas, conexión Wi-Fi, cámaras de seguridad, mensajería, un moderno Business Center y servicio de emergencias, 
+            span.bold  recepción las 24 horas, conexión Wi-Fi, cámaras de seguridad, mensajería, un moderno Business Center y servicio de emergencias, 
             | garantizando así una estadía segura, conectada y placentera para cada huésped.
 
 
@@ -43,7 +44,7 @@ html
             p 
               strong - Habitación triple $90.300 Tarifa por Noche.
             p 
-              strong - Habitación cuádruple $105.000 Tarifa por Noche
+              strong - Habitación cuádruple $105.100 Tarifa por Noche
             p 
               strong - Habitación quíntuple $115.000 Tarifa por Noche.
 
@@ -147,6 +148,7 @@ html
                 li.active(data-target="#carouselSuit" data-slide-to="0")
                 li(data-target="#carouselSuit" data-slide-to="1")
                 li(data-target="#carouselSuit" data-slide-to="2")
+                li(data-target="#carouselSuit" data-slide-to="3")
               .carousel-inner
                 .carousel-item.active
                   img.d-block.w-100(src="/images/habitaciones/suit/habSuitCama.jpg" alt="Cama Doble")
@@ -154,6 +156,8 @@ html
                   img.d-block.w-100(src="/images/habitaciones/suit/habSuitBaño.jpg" alt="Baño standar")
                 .carousel-item
                   img.d-block.w-100(src="/images/habitaciones/suit/habSuitEspacio.jpg" alt="Sala Doble")
+                .carousel-item
+                  img.d-block.w-100(src="/images/habitaciones/suit/habSuit.jpg" alt="Sala Doble")
                   
               a.carousel-control-prev(href="#carouselSuit" role="button" data-slide="prev")
                 span.carousel-control-prev-icon(aria-hidden="true")
@@ -161,11 +165,7 @@ html
               a.carousel-control-next(href="#carouselSuit" role="button" data-slide="next")
                 span.carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
-      section.contacto
-        div.contactoCont
-          hr
-          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
-          hr
+      include ../includes/botonContacto.pug
           
       include ../includes/iframe.pug
 

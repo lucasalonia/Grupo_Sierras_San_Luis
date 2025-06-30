@@ -7,6 +7,7 @@ html
     include ../includes/meta.pug
   body
     include ../includes/navbar.pug
+    +navbar()
     main
       section.presentacionEventos
         div.presentacionContenido
@@ -15,7 +16,7 @@ html
             span.suave Eventos 
           hr
           p 
-            span.suave SIERRAS EVENTOS 
+            span.suave Sierras Eventos 
             | está dedicado a la organización integral de eventos, nos encontramos en una zona privilegiada en Las Chacras, Juana Koslay, lejos del centro de la ciudad y rodeados de un entorno natural
           p Nos dedicamos a hacer de su idea o proyecto una realidad, dándole importancia a cada detalle. Somos conscientes de que cada evento es único e irrepetible y nos caracterizamos por un trato personalizado con cada cliente, asesorándole en todo aquello que sea necesario.
       section.eventosServicios
@@ -57,11 +58,7 @@ html
         div.eventosVideoIframe
           iframe( src="https://www.youtube.com/embed/NoJ9qAYydNg?si=5_xdX11k-ukAiKJ0" title="YouTube video player"  allowfullscreen)
 
-      section.contacto
-        div.contactoCont
-          hr
-          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
-          hr
+      include ../includes/botonContacto.pug
 
       section.eventosGaleria
         div.eventosGaleriaContenido

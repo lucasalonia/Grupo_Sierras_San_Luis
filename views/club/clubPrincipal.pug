@@ -7,6 +7,7 @@ html
     include ../includes/meta.pug
   body
     include ../includes/navbar.pug
+    +navbar("https://www.instagram.com/sierras.club/?hl=es","https://www.facebook.com/SierrasClubok/?locale=es_LA")
     main
       section.presentacionClub
         div.presentacionContenido
@@ -14,12 +15,12 @@ html
             span.bold Sierras 
             span.suave Club 
           hr
-          p 
-            span.suave Sierras Club 
-            | cuenta con una pileta semiolímpica climatizada, cubierta con techo corredizo de policarbonato, para que puedas disfrutarla en cualquier condición climática.  
-          p Ofrecemos natación para todas las edades y niveles, aquagym, pileta libre y un gimnasio con entrenamiento funcional personalizado, siempre con profesionales dedicados a tu salud y bienestar. 
+          p Contamos con una pileta semiolímpica climatizada, cubierta con techo corredizo de policarbonato, para que puedas disfrutarla en cualquier condición climática.
+          p En 
+            span.suave Sierras Club
+            | , ofrecemos natación para todas las edades y niveles, aquagym, pileta libre y un gimnasio con entrenamiento funcional personalizado, siempre con profesionales dedicados a tu salud y bienestar.
           p
-            span.bold Animate y vivi la experiencia de esta gran 
+            span.bold Animate y viví la experiencia de esta gran 
               span.suave familia 
               | del sierras club y sierras hotel.
       section.galeria
@@ -27,7 +28,22 @@ html
           h2.titulo 
             span.suave Descubrí Sierras Club  
           hr
-          p Desde la pileta climatizada hasta los entrenamientos en el gimnasio, compartimos algunos momentos que hacen especial cada día en Sierras Club.
+          p Desde la pileta climatizada, con 
+            span.bold clases de natación para niños, adultos, federados e iniciales
+            | , hasta los entrenamientos en el gimnasio con 
+            span.bold funcional personalizado
+            |  (consultar cupos), compartimos algunos de los momentos que hacen especial cada día en 
+            span.suave Sierras Club
+            | . También disfrutamos de actividades como 
+            span.bold aquagym
+            | , 
+            span.bold yoga
+            | , 
+            span.bold pileta libre
+            |  y de la alegría de la 
+            span.bold colonia de vacaciones
+            | , donde grandes y chicos pasan lindos momentos durante el invierno y el verano.
+
 
       div.galeriaContenedorMobile
           div#carouselSuit.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
@@ -38,12 +54,16 @@ html
                   li(data-target="#carouselSuit" data-slide-to="3")
                   li(data-target="#carouselSuit" data-slide-to="4")
                   li(data-target="#carouselSuit" data-slide-to="5")
+                  li(data-target="#carouselSuit" data-slide-to="6")
+                  li(data-target="#carouselSuit" data-slide-to="7")
+                  li(data-target="#carouselSuit" data-slide-to="8")
+                  li(data-target="#carouselSuit" data-slide-to="9")
                   
                 .carousel-inner
                   .carousel-item.active
-                    img.d-block.w-100(src="/images/club/club1.jpg" alt="Cama Doble")
+                    img.d-block.w-100(src="/images/club/club1.png" alt="Cama Doble")
                   .carousel-item
-                    img.d-block.w-100(src="/images/club/club2.jpg" alt="Baño standar")
+                    img.d-block.w-100(src="/images/club/club7.png" alt="Baño standar")
                   .carousel-item
                     img.d-block.w-100(src="/images/club/club3.jpg" alt="Sala Doble")
                   .carousel-item
@@ -51,22 +71,27 @@ html
                   .carousel-item
                     img.d-block.w-100(src="/images/club/club5.jpg" alt="Sala Doble")
                   .carousel-item
-                    img.d-block.w-100(src="/images/club/club6.jpg" alt="Sala Doble")             
+                    img.d-block.w-100(src="/images/club/club6.jpg" alt="Sala Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club10.jpeg" alt="Sala Doble")
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club12.jpeg" alt="Sala Doble") 
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club14.png" alt="Sala Doble") 
+                  .carousel-item
+                    img.d-block.w-100(src="/images/club/club13.png" alt="Sala Doble") 
+                                
                 a.carousel-control-prev(href="#carouselSuit" role="button" data-slide="prev")
                   span.carousel-control-prev-icon(aria-hidden="false")
                   span.sr-only Previous
                 a.carousel-control-next(href="#carouselSuit" role="button" data-slide="next")
                   span.carousel-control-next-icon(aria-hidden="false")
                   span.sr-only Next   
-      section.contacto
-        div.contactoCont
-          hr
-          a.contactoLink(href="/contacto/contactoPrincipal") Ir a Contacto
-          hr
+      include ../includes/botonContacto.pug
       include ../includes/iframe.pug
       script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
       script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
       
   include ../includes/footer.pug
   
-  +footer( "el Club Sierras" )
+  +footer("el Club Sierras","5492665022402","https://www.instagram.com/sierras.club/?hl=es","https://www.facebook.com/SierrasClubok/?locale=es_LA")

@@ -2,57 +2,59 @@
 link(rel="stylesheet", href="/css/navBarStyle.css")
 
 
+mixin navbar(enlaceIns, enlaceFace)
+    - var enlaceIns = enlaceIns || "https://www.instagram.com/sierrashotel/?hl=es"
+    - var enlaceFace = enlaceFace || "https://www.facebook.com/SierrasHotelLasChacras/?locale=es_LA"
+    header
+        nav.navbar
+            img.logo(src="/images/logoHotelSierras.png", alt="")
 
-header
-    nav.navbar
-        img.logo(src="/images/lohoHotelSierras.png", alt="")
+            div.menu-toggle ☰
 
-        div.menu-toggle ☰
+            ul.menu
+                li
+                    a(href="/") Servicios
+                hr
 
-        ul.menu
-            li
-                a(href="/") Servicios
-            hr
+                li
+                    a(href="/hotel/hotelPrincipal") Hotel
 
-            li
-                a(href="/hotel/hotelPrincipal") Hotel
+                hr
 
-            hr
+                li
+                    a(href="/hotel/habitaciones") Habitaciones
 
-            li
-                a(href="/hotel/habitaciones") Habitaciones
+                hr  
 
-            hr  
+                li
+                    a(href="/restaurante/restaurantePrincipal") Restaurante
 
-            li
-                a(href="/restaurante/restaurantePrincipal") Restaurante
-
-            hr
-            
-
-            li
-                a(href="/eventos/eventosPrincipal") Eventos
-
-            hr
-
-
-            li
-                a(href="/club/clubPrincipal") Club
-
-            hr
-
-
-            li
-                a(href="/contacto/contactoPrincipal") Contacto
-            hr
-        div.redesCont
-            div.redesEnlaces
-
-                a(href="https://www.facebook.com/SierrasHotelLasChacras/?locale=es_LA")
-
-                    img.redes(src="/images/facebook.png", alt="")
-
-                a(href="https://www.instagram.com/sierrashotel/?hl=es")
+                hr
                 
-                    img.redes(src="/images/instagram.png", alt="")
-script(src="/scripts/navBarResponsive.js")
+
+                li
+                    a(href="/eventos/eventosPrincipal") Eventos
+
+                hr
+
+
+                li
+                    a(href="/club/clubPrincipal") Club
+
+                hr
+
+
+                li
+                    a(href="/contacto/contactoPrincipal") Contacto
+                hr
+            div.redesCont
+                div.redesEnlaces
+
+                    a(href=`${enlaceFace}` target="_blank")
+
+                        img.redes(src="/images/facebook.png", alt="", )
+
+                    a(href=`${ enlaceIns}`,target="_blank")
+                    
+                        img.redes(src="/images/instagram.png", alt="")
+    script(src="/scripts/navBarResponsive.js")

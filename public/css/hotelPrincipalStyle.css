@@ -129,7 +129,7 @@ div.contingentesDescripcion {
   padding: 20px 20px 0;
 }
 h2.contingentesTitulo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
   color: #e8e7e3;
   font-weight: 400;
@@ -137,14 +137,18 @@ h2.contingentesTitulo {
 section.contingentes h3 {
   font-weight: 400;
   color: #e8e7e3;
+  font-size: 2rem;
+  margin-top: 20px;
 }
 section.contingentes hr {
   width: 80%;
   max-width: 400px;
+  height: 1px;
+  background-color: #e8e7e3;
 }
 div.contingentesDescripcion p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -152,36 +156,41 @@ div.contingentesDescripcion hr {
   width: 90%;
   max-width: 700px;
 }
-div.contingentesEjemploUno,
-div.contingentesEjemploDos {
-  padding: 0 20px;
+.carousel-item img {
+  width: auto;
+  height: 250px;
 }
-div.contingentesEjemploUno h3,
-div.contingentesEjemploDos h3 {
-  text-align: center;
-  font-size: 1.7rem;
-}
-div.contingentesEjemploUno img,
-div.contingentesEjemploDos img {
+div.contingentesEjemplo {
+  padding: 0 10px;
+  box-shadow: none;
   width: 100%;
   display: block;
   margin: 0 auto;
   border-radius: 5px;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.6);
-}
-div.contingentesEjemploUno p,
-div.contingentesEjemploDos p {
-  text-align: justify;
+
   font-size: 1.2rem;
   color: #e8e7e3;
   font-weight: 350;
+}
+div.contingentesEjemplo h3 {
+  padding: 0 10px;
+  text-align: center;
+}
+#agrupacionesCarousel {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+div.contingentesEjemplo p {
+  text-align: justify;
+  padding: 0 10px;
+  font-size: 1.3rem;
 }
 
 div.contingentesCierre {
   padding: 0 20px 30px;
 }
 div.contingentesCierre p {
-  text-align: justify;
+  text-align: center;
   font-size: 1.5rem;
   color: #e8e7e3;
   font-weight: 350;
@@ -212,14 +221,48 @@ section.mapa h2 {
   width: 100%;
 }
 
-section.galeria {
+section.caracteristicas {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #444;
-  margin-top: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   padding-left: 10px;
   padding-right: 10px;
+}
+section.caracteristicas hr {
+  width: 70%;
+}
+section.caracteristicas h2 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+section.caracteristicas p {
+  text-align: center;
+
+  font-size: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 10px;
+  font-weight: 350;
+}
+
+section.galeria {
+  background-color: #2e3b33;
+  margin: 10px 10px 20px;
+  border-radius: 20px;
+  display: flex;
+  padding-top: 30px;
+  flex-direction: column;
+  font-weight: 400;
+  color: #e8e7e3;
+}
+section.galeria hr {
+  height: 1px;
+  background-color: #e8e7e3;
 }
 section.galeria h2 {
   text-align: center;
@@ -229,21 +272,20 @@ section.galeria h2 {
 }
 section.galeria p {
   text-align: justify;
-  font-weight: 400;
   font-size: 1.2rem;
   padding-left: 20px;
   padding-right: 20px;
   margin-top: 10px;
-  font-weight: 400;
+  font-weight: 350;
+   
 }
 div.galeriaContenedor {
   display: none;
 }
-div.galeriaContenedorMobile img{
+div.galeriaContenedorMobile img {
   object-fit: cover;
   width: 100%;
   height: 400px;
-
 }
 
 .carousel-item {
@@ -261,11 +303,9 @@ div.galeriaContenedorMobile img{
   border-radius: 5px;
 }
 
-
-
 /*Resolucion 1366*/
 @media (min-width: 1366px) {
-  div.galeriaContenedorMobile{
+  div.galeriaContenedorMobile {
     display: none;
   }
   div.precentacionContenido {
@@ -288,7 +328,6 @@ div.galeriaContenedorMobile img{
   div.precentacionContenido hr {
     width: 650px;
     height: 1px;
-    background-color: #e8e7e3;
     margin-left: 0;
     margin-right: auto;
   }
@@ -311,14 +350,6 @@ div.galeriaContenedorMobile img{
   }
 
   section.contingentes {
-    display: grid;
-    grid-template-areas:
-      "uno uno"
-      "espacio1 espacio2"
-      "dos tres"
-      "espacio3 espacio3"
-      "cuatro cuatro";
-
     margin: 0 auto;
     border-radius: 30px;
     font-weight: 400;
@@ -326,9 +357,19 @@ div.galeriaContenedorMobile img{
     background-color: #e8e7e3;
   }
 
-  section.contingentes p {
-    margin-bottom: 20px;
+  .carousel-item img {
+    width: 500px;
+    height: 500px;
   }
+  div.contingentesEjemplo p {
+    color: #444;
+    padding: 0px 50px;
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 350;
+    margin-top: 20px;
+  }
+
   div.contingentesDescripcion {
     grid-area: uno;
     padding: 0px;
@@ -340,8 +381,8 @@ div.galeriaContenedorMobile img{
     color: #444;
   }
   section.contingentes h3 {
-    margin: 20px 0 20px;
-    font-size: 30px;
+
+    font-size: 2rem;
     color: #444;
   }
   div.contingentesDescripcion p {
@@ -351,11 +392,12 @@ div.galeriaContenedorMobile img{
   }
 
   section.contingentes div.contingentesDescripcion hr {
-    width: 700px;
+    width: 60%;
   }
   section.contingentes hr {
-    width: 479px;
-    height: 2px;
+     width: 60%;
+    height: 1px;
+      background-color: #444;
   }
   section.contingentes img {
     width: 100%;
@@ -423,11 +465,18 @@ div.galeriaContenedorMobile img{
     grid-area: espacio3;
     width: 700px;
   }
+  section.galeria {
+    background-color: #e8e7e3;
+  }
+  section.galeria hr {
+    height: 1px;
+    background-color: #444;
 
+  }
   div.galeriaContenedor {
     display: flex;
     width: 100%;
-    
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -435,6 +484,42 @@ div.galeriaContenedorMobile img{
     gap: 20px;
   }
 
+  section.caracteristicas {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #2e3b33;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    color: #e8e7e3;
+  }
+  section.caracteristicas hr {
+        margin-top: 10px;
+    margin-bottom: 20px;
+    height: 1px;
+    width: 30%;
+    background-color: #e8e7e3;
+  }
+  section.caracteristicas div.caracteristicasCont {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      padding: 0 200px;
+  }
+  section.caracteristicas div.caracteristicasCont h2 {
+    margin: 0;
+  }
+  section.caracteristicas div.caracteristicasCont p {
+    font-weight: 350;
+    margin: 0;
+    text-align: justify;
+  
+  }
   div.galeriaContenedor img {
     width: 95%;
     height: 350px;
@@ -558,7 +643,10 @@ div.galeriaContenedorMobile img{
     margin: 0;
     align-self: center;
   }
-
+   section.caracteristicas div.caracteristicasCont {
+  
+      padding: 0 500px;
+  }
   section.galeria h2 {
     text-align: center;
     font-weight: 500;
@@ -578,7 +666,7 @@ div.galeriaContenedorMobile img{
   }
 
   div.galeriaContenedor img {
-    width: 100%;  
+    width: 100%;
     box-shadow: none;
   }
 }
