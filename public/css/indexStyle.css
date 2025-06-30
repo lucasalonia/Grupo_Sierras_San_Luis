@@ -99,6 +99,8 @@ h1.slogan span {
   font-size: 1rem;
   color: #faf9f6;
   margin-top: 5px;
+  font-weight: 300;
+   font-family: "Lato", sans-serif;
 }
 
 .contenido::after {
