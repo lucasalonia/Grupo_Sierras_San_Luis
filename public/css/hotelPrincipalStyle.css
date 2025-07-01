@@ -5,7 +5,7 @@ body {
 }
 
 section.presentacionHotel {
-  background-image: url("https://i.ibb.co/sJMJdm2F/galeria2.jpg");
+  background-image: url("/images/testFondo.jpg");
   background-size: cover;
   background-position: center;
   position: relative;

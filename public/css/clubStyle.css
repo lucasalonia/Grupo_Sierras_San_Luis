@@ -5,7 +5,7 @@ body {
 }
 
 section.presentacionClub {
-  background-image: url("/images/galeria/galeria3.jpg");
+  background-image: url("https://i.ibb.co/CKDbBC3w/galeria3.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
