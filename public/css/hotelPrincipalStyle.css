@@ -83,7 +83,7 @@ div.bienvenidosTitulo p {
 div.bienvenidosTitulo hr {
   width: 80%;
   max-width: 600px;
-  background-color: #a5a4a0;
+  background-color: #444;
   height: 1px;
 }
 
@@ -189,6 +189,8 @@ div.contingentesDescripcion p {
 div.contingentesDescripcion hr {
   width: 90%;
   max-width: 700px;
+  height: 1px;
+  color: #444;
 }
 .carousel-item img {
   width: auto;
@@ -297,6 +299,7 @@ section.galeria {
 }
 section.galeria hr {
   height: 1px;
+
   background-color: #444;
 }
 section.galeria h2 {
@@ -524,24 +527,7 @@ div.bienvenidosIframe iframe {
     grid-area: espacio3;
     width: 700px;
   }
-  section.galeria {
-    background-color: #e8e7e3;
-  }
-  section.galeria hr {
-    height: 1px;
-    background-color: #444;
 
-  }
-  div.galeriaContenedor {
-    display: flex;
-    width: 100%;
-
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
 
   section.caracteristicas {
     width: 100%;
@@ -597,7 +583,25 @@ div.bienvenidosIframe iframe {
     opacity: 1;
     transform: translateY(0);
   }
+  
+  section.galeria hr {
+    height: 1px;
+    background-color: #444;
+
+  }
+  div.galeriaContenedor {
+    display: flex;
+    width: 100%;
+
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
   section.galeria {
+     width: 100%;
+    margin:0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -612,11 +616,14 @@ div.bienvenidosIframe iframe {
     font-size: 2.4rem;
     margin-bottom: 5px;
   }
+  .galeriaPresentacion{
+    width: 70%;
+  }
   section.galeria p {
     text-align: justify;
     font-size: 1.4rem;
-    padding-left: 100px;
-    padding-right: 100px;
+
+   
     margin-top: 10px;
     margin-bottom: 20px;
     font-weight: 300;
