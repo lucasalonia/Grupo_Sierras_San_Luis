@@ -5,7 +5,7 @@ body {
 }
 
 section.presentacionEventos {
-  background-image: url("/images/eventos/eventos4.jpeg");
+  background-image: url("https://i.ibb.co/1CnkV7w/eventos4.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
