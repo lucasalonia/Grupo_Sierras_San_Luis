@@ -20,7 +20,7 @@ section.presentacionHotel::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(56, 55, 55, 0.863);
+   background: rgba(56, 55, 55, 0.767);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 0;
@@ -55,6 +55,7 @@ span.suave {
 div.precentacionContenido hr {
   width: 90%;
   max-width: 600px;
+  height: 1px;
   background-color: #a5a4a0;
 }
 

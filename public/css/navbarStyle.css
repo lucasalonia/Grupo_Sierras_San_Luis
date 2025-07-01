@@ -112,11 +112,12 @@ img.redes {
   img.logo {
     margin-bottom: 5px;
     margin-left: 50px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: initial;
     border-radius: initial;
     box-shadow: initial;
-    width: 12%;
+    width: 10%;
+    height: 55px;
   }
 
   .menu {
@@ -147,6 +148,7 @@ img.redes {
   }
 
   .navbar {
+    height: 100px;
     background-color: #e8ecec;
     padding: 10px 50px;
     display: flex;
@@ -210,12 +212,20 @@ img.redes {
 }
 /*RESOLUCION 1920*/
 @media (min-width: 1920px) {
+   img.logo {
+ 
+    width: 12%;
+    height: 75px;
+  }
   img.logo {
     width: 10%;
     margin-left: 70px;
+    margin-top: 2px;
+    
   }
   .menu {
     gap: 50px;
+
   }
   img.redes {
     height: 25px;

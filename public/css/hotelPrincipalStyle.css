@@ -5,7 +5,7 @@ body {
 }
 
 section.presentacionHotel {
-  background-image: url("/images/testFondo.jpg");
+  background-image: url("https://i.ibb.co/sJMJdm2F/galeria2.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -13,7 +13,18 @@ section.presentacionHotel {
   display: flex;
   flex-direction: column;
 }
-
+section.presentacionHotel::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(56, 55, 55, 0.767);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 0;
+}
 div.precentacionContenido {
   margin-top: 0px;
   position: relative;
@@ -41,11 +52,45 @@ span.suave {
   font-weight: 400;
   font-style: italic;
 }
-div.precentacionContenido hr {
+
+div.precentacionContenido hr{
   width: 90%;
   max-width: 600px;
   background-color: #a5a4a0;
+  height: 1px;
 }
+
+section.bienvenidos {
+  margin-top: 2rem;
+  padding: 2rem 0.5rem;
+}
+
+div.bienvenidosTitulo  h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  margin: 1rem 0;
+}
+div.bienvenidosTitulo p {
+  text-align: justify;
+  font-size: 1.5rem;
+  color: #444;
+  font-weight: 350;
+  margin-bottom: 2.5rem;
+  padding:0 1.5rem;
+  font-weight: 300;
+}
+div.bienvenidosTitulo hr {
+  width: 80%;
+  max-width: 600px;
+  background-color: #a5a4a0;
+  height: 1px;
+}
+
+div.bienvenidosIframe iframe {
+  width: 100%;
+}
+
 
 section.habitaciones {
   display: flex;
@@ -321,7 +366,31 @@ div.galeriaContenedorMobile img {
     margin-left: 0;
     margin-right: auto;
   }
+section.bienvenidos {
+  width: 60%;
+  margin: 0 auto;
+}
 
+div.bienvenidosTitulo  h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #444;
+  margin: 1rem 0;
+}
+div.bienvenidosTitulo p {
+ 
+
+  padding:0 10rem;
+
+}
+div.bienvenidosTitulo hr {
+  width: 30%;
+
+}
+
+div.bienvenidosIframe iframe {
+  height: 400px;
+}
   div.habitacionesCont {
     display: flex;
     flex-direction: column;

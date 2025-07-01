@@ -9,13 +9,14 @@ html
     include ../includes/navbar.pug
     +navbar()
     main
+      
       section.presentacionHotel 
         div.precentacionContenido
           h2.titulo
             span.bold Sierras 
             span.suave Hotel 
             
-          hr
+          hr.titulo
           p Ubicado en 
             span.bold Las Chacras
             | , una de las zonas más tradicionales de la joven ciudad de 
@@ -30,7 +31,19 @@ html
             | , un emprendimiento turístico que busca satisfacer todas las expectativas de quienes lo visitan, sin perder los valores tradicionales de 
             em familia y amistad que caracterizan a estos pagos puntanos.
 
-
+      section.bienvenidos 
+        div.bienvenidosTitulo
+          h2 
+            span.suave Bienvenidos
+          hr
+          p Te mostramos cómo es 
+            span.bold vivir 
+            | la experiencia 
+            span.suave Sierras Hotel: 
+            em descanso, naturaleza y atención personalizada.
+          
+        div.bienvenidosIframe
+          iframe(width="560" height="315" src="https://www.youtube.com/embed/G-SmBtLpU00?si=MA-bh9ucfsCzdVzv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen)
 
       section.habitaciones
         div.habitacionesCont
@@ -50,8 +63,8 @@ html
           p 
             | Recibimos contingentes durante todo el año, ofreciendo un servicio especializado para grupos que 
             strong buscan comodidad, seguridad y organización. 
-            | Nuestro hotel cuenta con la infraestructura y el equipo humano necesarios para alojar desde escuelas hasta clubes, delegaciones o asociaciones, garantizando una estadía ordenada y 
-            em placentera.
+            | Nuestro hotel cuenta con la infraestructura y el equipo humano necesarios para alojar grupos y contingentes de deportistas, eventos anuales de promociones, escolares, organizando eventos especiales como cenas de gala, campamentos, fogatas, creando espacios lúdicos y de descanso
+          p Contamos con las instalaciones ideales para grupos de entrenamiento de triatletas, con nuestra piscina climatizada de semio límpica y con acceso a las principales rutas serranas
                     hr.uno
         div.contingentesEjemplo
           div#agrupacionesCarousel.carousel.slide(data-ride="carousel" data-interval="false" data-pause="hover"  data-wrap="true")
@@ -68,25 +81,25 @@ html
                 li(data-target="#agrupacionesCarousel" data-slide-to="9")
               .carousel-inner
                 .carousel-item.active
-                  img.d-block.w-100(src=" /images/contingentes/educativo.jpg" loading="lazy" alt="Contingente 1")
+                  img.d-block.w-100(src=" https://i.ibb.co/Zp0c9HtD/contingente-educativo2.jpg" loading="lazy" alt="Contingente 1")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/deportivo.png" loading="lazy" alt="Contingente 2")
+                  img.d-block.w-100(src=" https://i.ibb.co/CpyQjvf7/contingente1.png" loading="lazy" alt="Contingente 2")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/cont.png" loading="lazy" alt="Contingente 3")
+                  img.d-block.w-100(src="https://i.ibb.co/9LY4ZP9/exmilitares.png" loading="lazy" alt="Contingente 3")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/exmilitares.png" loading="lazy" alt="Contingente 4")
+                  img.d-block.w-100(src="https://i.ibb.co/ccPf3mGF/contingente4.jpg" loading="lazy" alt="Contingente 4")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente1.png" loading="lazy" alt="Contingente 5")
+                  img.d-block.w-100(src="https://i.ibb.co/qYFtTJxQ/deportivo.png" loading="lazy" alt="Contingente 5")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente3.png" loading="lazy" alt="Contingente 6")
+                  img.d-block.w-100(src="https://i.ibb.co/23NntmS9/contingente11.png" loading="lazy" alt="Contingente 6")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente4.jpg"  loading="lazy" alt="Contingente 7")
+                  img.d-block.w-100(src="https://i.ibb.co/ccmWqLzn/cont.png"  loading="lazy" alt="Contingente 7")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente5.png" loading="lazy"  alt="Contingente 8")
+                  img.d-block.w-100(src="https://i.ibb.co/bGjxZ0S/contingente9.png" loading="lazy"  alt="Contingente 8")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente7.jpeg" loading="lazy"  alt="Contingente 9")
+                  img.d-block.w-100(src="https://i.ibb.co/kgBZrhDs/contingente8.jpg" loading="lazy"  alt="Contingente 9")
                 .carousel-item
-                  img.d-block.w-100(src="/images/contingentes/contingente8.JPG" loading="lazy" alt="Contingente 10")
+                  img.d-block.w-100(src="https://i.ibb.co/BvhSgNx/contingente5.png " loading="lazy" alt="Contingente 10")
 
               a.carousel-control-prev(href="#agrupacionesCarousel" role="button" data-slide="prev")
                 span.carousel-control-prev-icon(aria-hidden="true")
@@ -94,19 +107,12 @@ html
               a.carousel-control-next(href="#agrupacionesCarousel" role="button" data-slide="next")
                 span.carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
-          hr
-          p Clubes, delegaciones y asociaciones con propuestas pensadas para cada grupo. Coordinamos cada aspecto para asegurar una estadía 
-            strong cómoda 
-            | y 
-            strong organizada.
-            |  Nuestro entorno es ideal para escuelas: espacios amplios, menús adaptados y zonas comunes que favorecen la convivencia. 
-            strong Una opción confiable para docentes y estudiantes.
         hr.tres
         div.contingentesCierre
           p 
-            em Cada grupo es 
+            em Sabemos que cada grupo es
             strong  único. 
-            em  Nuestro equipo y espacios están listos para ofrecer una experiencia cálida y personalizada.
+            em  Por eso, los invitamos a vivir una estadía pensada para sentirse cómodos y acompañados.
 
 
      
@@ -156,7 +162,7 @@ html
                   .carousel-item
                     img.d-block.w-100(src="https://i.ibb.co/nM7xgPXQ/galeria5.jpg" alt="Sala Doble")
                   .carousel-item
-                    img.d-block.w-100(src="https://i.ibb.co/C596RXnM/galeria12.jpg" alt="Sala Doble")
+                    img.d-block.w-100(src="/images/habitaciones/suit/habSuitCama.jpg" alt="Sala Doble")
                   .carousel-item
                     img.d-block.w-100(src="https://i.ibb.co/xSzgCrCB/galeria11.jpg" alt="Sala Doble")
                   .carousel-item
@@ -175,7 +181,7 @@ html
           img(src="https://i.ibb.co/nMPSswzQ/galeria9.jpg", alt="Imagen 3")
           img(src="https://i.ibb.co/s9jdDpfW/galeria4.jpg", alt="Imagen 4")
           img(src="https://i.ibb.co/nM7xgPXQ/galeria5.jpg", alt="Imagen 5")
-          img(src="https://i.ibb.co/C596RXnM/galeria12.jpg", alt="Imagen 6")
+          img(src="/images/habitaciones/suit/habSuitCama.jpg", alt="Imagen 6")
           img(src="https://i.ibb.co/xSzgCrCB/galeria11.jpg", alt="Imagen 7")
           img(src="https://i.ibb.co/CKDbBC3w/galeria3.jpg", alt="Imagen 8") 
       
@@ -183,9 +189,9 @@ html
       include ../includes/iframe.pug
                       
         
-    script(src="/scripts/animacionHome.js")
-    script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
-    script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
+      script(src="/scripts/animacionHome.js")
+      script(src="https://code.jquery.com/jquery-3.5.1.slim.min.js")
+      script(src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js")
 
   include ../includes/footer.pug
   
