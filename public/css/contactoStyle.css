@@ -229,18 +229,28 @@ section.formulario button.botonEnviar:hover {
     justify-self: center;
   }
   section.formulario form {
-    gap: 5px;
+    gap: 0px;
   }
+  section.formulario form label{
+    margin-bottom: 0;
+   
+  }
+
   section.formulario textarea {
     height: 150px;
   }
   div.infoContactoDireccion.contInfo{
   margin-left: 20px;
  }
+ .botonEnviar{
+  margin-top: 10px;
+ }
 }
 
 @media (min-width: 1920px) {
-
+  section.formulario form {
+    width: 30%;
+  }
   div.contactoInfoCont {
     width: 18%;
   }
