@@ -40,7 +40,7 @@ div.precentacionContenido h2.titulo {
 }
 div.precentacionContenido p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -197,7 +197,6 @@ div.contingentesDescripcion hr {
   height: 250px;
 }
 div.contingentesEjemplo {
-  padding: 0 10px;
   box-shadow: none;
   width: 100%;
   display: block;
@@ -208,6 +207,7 @@ div.contingentesEjemplo {
 
   font-weight: 350;
 }
+
 div.contingentesEjemplo h3 {
   padding: 0 10px;
   text-align: center;
