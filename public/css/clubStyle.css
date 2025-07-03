@@ -9,7 +9,7 @@ section.presentacionClub {
   background-size: cover;
   background-position: center;
   position: relative;
-   min-height: 90vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -21,7 +21,7 @@ section.presentacionClub::after {
   left: 0;
   width: 100%;
   height: 100%;
-   background: rgba(56, 55, 55, 0.767);
+  background: rgba(56, 55, 55, 0.767);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(8px);
   border-radius: 0;
@@ -32,7 +32,7 @@ div.presentacionContenido {
   position: relative;
   z-index: 1;
   padding: 2rem;
-  height: 60vh;
+  height: auto;
 }
 
 div.presentacionContenido h2.titulo {
@@ -44,7 +44,7 @@ div.presentacionContenido h2.titulo {
 
 div.presentacionContenido p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -61,7 +61,7 @@ span.suave {
 
 div.presentacionContenido hr {
   width: 90%;
-   height: 1px;
+  height: 1px;
   max-width: 600px;
   background-color: #a5a4a0;
 }
@@ -82,8 +82,6 @@ div.galeriaContenedorMobile img {
   width: 100%;
   height: 250px;
 }
-
-
 
 section.galeria {
   margin-top: 2rem;
@@ -150,28 +148,19 @@ a.contactoLink:active {
   text-decoration: none;
 }
 
-@media (width: 375px) and (height: 667px){
-  section.presentacionHotel {
-
-  min-height: 100vh;
-
-  }
-  
-}
 @media (min-width: 648px) {
   section.galeria {
     width: 50%;
     margin: 0 auto;
-  
-}
+  }
 
-div.galeriaDescripcion h2.titulo {
-   margin-top: 0px;
-}
+  div.galeriaDescripcion h2.titulo {
+    margin-top: 0px;
+  }
 
-div.galeriaDescripcion hr {
-  height: 1px;
-}
+  div.galeriaDescripcion hr {
+    height: 1px;
+  }
   div.contactoCont {
     display: flex;
     flex-direction: column;
@@ -189,17 +178,13 @@ div.galeriaDescripcion hr {
     height: 1px;
   }
   div.galeriaContenedorMobile {
-      width: 60%;
-      margin: 0 auto;
-
+    width: 60%;
+    margin: 0 auto;
   }
   div.galeriaContenedorMobile img {
     height: 500px;
-
   }
 
- 
-  
   div.presentacionContenido {
     display: flex;
     flex-direction: column;
@@ -224,7 +209,11 @@ div.galeriaDescripcion hr {
     margin-right: auto;
   }
 }
-
+@media (min-width: 1920px) {
+  section.presentacionClub {
+    min-height: 90vh;
+  }
+}
 @media (min-width: 1920px) {
   div.presentacionContenido {
     padding-left: 80px;
@@ -238,15 +227,13 @@ div.galeriaDescripcion hr {
     font-size: 2rem;
     margin-bottom: 0px;
   }
-  
+
   div.contactoCont hr {
     width: 400px;
     height: 1px;
   }
-   div.galeriaContenedorMobile img {
+  div.galeriaContenedorMobile img {
     width: auto;
     height: 550px;
-
   }
-
 }

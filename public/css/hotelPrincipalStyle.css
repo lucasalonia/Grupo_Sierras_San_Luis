@@ -9,7 +9,7 @@ section.presentacionHotel {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 90vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -30,7 +30,7 @@ div.precentacionContenido {
   position: relative;
   z-index: 1;
   padding: 2rem;
-  height: 60vh;
+   height: auto;
 }
 div.precentacionContenido h2.titulo {
   text-align: center;
@@ -40,7 +40,7 @@ div.precentacionContenido h2.titulo {
 }
 div.precentacionContenido p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -341,17 +341,44 @@ div.galeriaContenedorMobile img {
   border-radius: 5px;
 }
 
-@media (width: 375px) and (height: 667px){
-  section.presentacionHotel {
 
-  min-height: 100vh;
-
-  }
   
+
+/*Resolucion tablets*/
+@media (min-width: 768px){
+
+  section.bienvenidos{
+    width: 70%;
+    margin: 0 auto;
+  }
+  div.precentacionContenido p {
+
+  font-size: 1.5rem;
+
+}
+div.contingentesDescripcion {
+  padding: 20px 100px;
+}
+div.contingentesEjemplo {
+  width: 80%;
+}
+div.contingentesEjemplo img{
+  height: 300px;
+}
+div.galeriaPresentacion{
+  padding: 20px 60px;
+}
+div.galeriaContenedorMobile{
+  width: 70%;
+  margin: 0 auto;
 }
 
+}
 /*Resolucion 1366*/
 @media (min-width: 1360px) {
+  section.presentacionHotel{
+  min-height: 90vh;
+}
   div.galeriaContenedorMobile {
     display: none;
   }

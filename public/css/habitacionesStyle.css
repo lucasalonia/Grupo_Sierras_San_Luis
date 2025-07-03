@@ -8,7 +8,7 @@ section.presentacionHotel {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 90vh;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
 
@@ -30,7 +30,7 @@ div.precentacionContenido {
   position: relative;
   z-index: 1;
   padding: 2rem;
-  height: 60vh;
+  height: auto;
 }
 div.precentacionContenido h2.titulo {
   text-align: center;
@@ -40,7 +40,7 @@ div.precentacionContenido h2.titulo {
 }
 div.precentacionContenido p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -164,17 +164,15 @@ a.contactoLink:active {
 hr.suit {
   margin-top: 60px;
 }
-@media (width: 375px) and (height: 667px){
-  section.presentacionHotel {
 
-  min-height: 100vh;
 
-  }
-  
-}
+
 
 /*Resolucion 1366*/
 @media (min-width: 1360px) {
+  section.presentacionHotel {
+    min-height: 90vh;
+  }
   div.precentacionContenido {
     margin: 0px;
     padding: 30px;

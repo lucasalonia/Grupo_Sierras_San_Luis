@@ -9,7 +9,7 @@ section.presentacionEventos {
   background-size: cover;
   background-position: center;
   position: relative;
-   min-height: 90vh;
+   min-height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +32,7 @@ div.presentacionContenido {
   position: relative;
   z-index: 1;
   padding: 2rem;
-  height: 60vh;
+  height:auto;
 }
 
 div.presentacionContenido h2.titulo {
@@ -44,7 +44,7 @@ div.presentacionContenido h2.titulo {
 
 div.presentacionContenido p {
   text-align: justify;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #e8e7e3;
   font-weight: 350;
 }
@@ -109,7 +109,7 @@ div.eventosGaleriaContenido h2.titulo {
 }
 div.eventosGaleriaContenido p {
   text-align: justify;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #444;
   font-weight: 350;
   margin-bottom: 0.5rem;
@@ -230,16 +230,12 @@ a.contactoLink:active {
   text-decoration: none;
 }
 
-@media (width: 375px) and (height: 667px){
-  section.presentacionHotel {
 
-  min-height: 100vh;
-
-  }
-  
-}
 
 @media (min-width: 1360px) {
+  section.presentacionEventos {
+    min-height: 90vh;
+  }
   div.presentacionContenido {
     display: flex;
     flex-direction: column;
