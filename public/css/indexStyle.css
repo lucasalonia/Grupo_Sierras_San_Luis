@@ -245,7 +245,7 @@ h4.tituloCopy a:visited {
   padding: 0;
   background: #e8ecec;
   font-family: "Lato", sans-serif;
-  background-image: url("/images/galeria/galeria5.png");
+  background-image: url("https://i.ibb.co/nM7xgPXQ/galeria5.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -258,7 +258,7 @@ body::after{
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(232, 236, 236, 0.918);
+  background-color: rgba(232, 236, 236, 0.863);
   z-index: -1;
 }
   div.presentacion img {
