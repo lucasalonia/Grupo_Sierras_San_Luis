@@ -220,6 +220,7 @@ section.formulario button.botonEnviar:hover {
   section.formulario {
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
   }
   section.formulario h2.tituloFormulario {
     text-align: center;
