@@ -405,6 +405,12 @@ div.galeriaContenedorMobile{
     margin-left: 0;
     margin-right: auto;
   }
+  div.contingentesEjemplo {
+  width: 85%;
+}
+div.contingentesEjemplo img{
+  height: 500px;
+}
 section.bienvenidos {
   width: 60%;
   margin: 0 auto;
