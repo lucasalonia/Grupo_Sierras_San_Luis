@@ -206,7 +206,7 @@ a.contactoLink:active {
   text-decoration: none;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1300px) {
   div.presentacionContenido {
     display: flex;
     flex-direction: column;

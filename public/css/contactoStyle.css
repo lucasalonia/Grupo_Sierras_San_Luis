@@ -166,7 +166,7 @@ section.formulario button.botonEnviar:hover {
   }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
     .modalCarga {
     position: fixed;
     top: 0;

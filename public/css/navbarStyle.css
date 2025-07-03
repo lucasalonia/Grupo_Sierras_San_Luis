@@ -97,7 +97,7 @@ img.redes {
   display: none;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
   .navbar {
     padding: initial;
     align-items: initial;

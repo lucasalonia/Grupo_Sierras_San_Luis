@@ -167,7 +167,7 @@ hr.suit {
 
 
 /*Resolucion 1366*/
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
   div.precentacionContenido {
     margin: 0px;
     padding: 30px;

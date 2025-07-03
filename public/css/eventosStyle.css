@@ -232,7 +232,7 @@ a.contactoLink:active {
 
 
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
   div.presentacionContenido {
     display: flex;
     flex-direction: column;

@@ -114,7 +114,7 @@ ul.redes li a img.redes {
   }
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
   .footer-contenido {
     gap: 25px;
   }
