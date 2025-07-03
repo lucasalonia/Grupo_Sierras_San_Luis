@@ -2,10 +2,17 @@ doctype html
 html
   head
     title Sierras Hotel
-    link(rel="stylesheet", href="/css/habitacionesStyle.css")
+    link(rel="stylesheet", href="/css/404.css")
   body
-    include ../includes/navbar.pug
+    include ./includes/navbar.pug
+    +navbar()
     main
+      .container-404
+        h1 404 - Página no encontrada
+        p ¡Ups! Parece que la página que estás buscando no existe.
+        p Podría haber sido movida o eliminada.
+        a(href='/') Volver a la página principal
       
     
-  include ../includes/footer.pug
+  include ./includes/footer.pug
+  +footer()

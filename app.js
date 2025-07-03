@@ -100,7 +100,9 @@ app.post("/enviar", async (req, res) => {
     });
   }
 });
-
+app.use((req, res, next) => {
+  res.status(404).render("404", { title: "Página no encontrada" });
+});
 app.listen(PORT, () => {
   console.log(`Servidor en puerto http://localhost:${PORT}`);
 });
