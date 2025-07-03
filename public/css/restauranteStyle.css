@@ -9,7 +9,7 @@ section.presentacionRestaurante {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 90vh;
+   min-height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -205,7 +205,14 @@ a.contactoLink:active {
   transform: scale(0.95);
   text-decoration: none;
 }
+@media (width: 375px) and (height: 667px){
+  section.presentacionHotel {
 
+  min-height: 100vh;
+
+  }
+  
+}
 @media (min-width: 1300px) {
   div.presentacionContenido {
     display: flex;

@@ -9,7 +9,7 @@ section.presentacionEventos {
   background-size: cover;
   background-position: center;
   position: relative;
-  min-height: 90vh;
+   min-height: 90vh;
   display: flex;
   flex-direction: column;
 }
@@ -230,7 +230,14 @@ a.contactoLink:active {
   text-decoration: none;
 }
 
+@media (width: 375px) and (height: 667px){
+  section.presentacionHotel {
 
+  min-height: 100vh;
+
+  }
+  
+}
 
 @media (min-width: 1360px) {
   div.presentacionContenido {

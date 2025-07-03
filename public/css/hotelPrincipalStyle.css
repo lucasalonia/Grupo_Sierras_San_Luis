@@ -341,6 +341,15 @@ div.galeriaContenedorMobile img {
   border-radius: 5px;
 }
 
+@media (width: 375px) and (height: 667px){
+  section.presentacionHotel {
+
+  min-height: 100vh;
+
+  }
+  
+}
+
 /*Resolucion 1366*/
 @media (min-width: 1360px) {
   div.galeriaContenedorMobile {
