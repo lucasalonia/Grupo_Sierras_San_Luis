@@ -8,5 +8,8 @@
   function gtag(){dataLayer.push(arguments);}
   window.gtag = gtag;
   gtag('js', new Date());
-  gtag('config', 'G-WPZQYV2H0B');
+
+  
+  gtag('config', 'G-WPZQYV2H0B'); 
+  gtag('config', 'AW-312024311');  
 })();
